@@ -1,11 +1,11 @@
 ground_truth_republish_node:
   ros__parameters:
-    # Inputs/outputs
-    source_topic: "/ground_truth_pose"
+    # Inputs/outputs - gazebo (gz) source
+    source_topic: "/gt_pose"
     odom_topic: "/odom"
     publish_tf: true
     odom_frame_id: "odom"
-    base_frame_id: "base_link"
+    base_frame_id: "base_footprint"
     map_frame_id: "map"
 
     # Timing guard for finite differencing
